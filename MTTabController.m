@@ -16,7 +16,7 @@
 
     MTParserState* state = [[(TTTabController*) self shell]
                                MouseTerm_getParserState];
-    MTParser_execute(chars, length, NO, [(TTTabController*) self shell],
+    MTParser_execute(chars, (int)length, NO, [(TTTabController*) self shell],
                      state);
 
     [self MouseTerm_shellDidReceiveData: data];

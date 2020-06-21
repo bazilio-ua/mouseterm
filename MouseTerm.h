@@ -4,7 +4,7 @@ extern NSMutableDictionary* MouseTerm_ivars;
 
 @interface MouseTerm: NSWindowController
 + (void) load;
-+ (IBAction) toggle: (NSMenuItem*) sender;
++ (void) toggle: (NSMenuItem*) sender;
 + (void) insertMenuItem;
 + (MouseTerm*) sharedInstance;
 - (void) orderFrontMouseConfiguration: (id) sender;

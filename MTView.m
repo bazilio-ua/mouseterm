@@ -15,8 +15,8 @@ static BOOL enabled = YES;
                             motion: (BOOL) motion
 {
     Position pos = [self MouseTerm_currentPosition: event];
-    unsigned int x = pos.x;
-    unsigned int y = pos.y;
+    unsigned int x = (unsigned int)pos.x;
+    unsigned int y = (unsigned int)pos.y;
     char cb = button + 32;
     char modflag = [event modifierFlags];
 

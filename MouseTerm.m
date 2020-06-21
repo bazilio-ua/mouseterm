@@ -129,7 +129,7 @@ NSMutableDictionary* MouseTerm_ivars = nil;
     [self insertMenuItem];
 }
 
-+ (IBAction) toggle: (NSMenuItem*) sender
++ (void) toggle: (NSMenuItem*) sender
 {
     [sender setState: ![sender state]];
     [NSView MouseTerm_setEnabled: [sender state]];
