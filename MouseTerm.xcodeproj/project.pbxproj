@@ -18,8 +18,22 @@
 		427CB43B249FFD54006F4330 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 427CB42E249FFD54006F4330 /* JRSwizzle.m */; };
 		427CB44B24A0010C006F4330 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 427CB44724A0010C006F4330 /* Localizable.strings */; };
 		427CB44C24A0010C006F4330 /* Configuration.xib in Resources */ = {isa = PBXBuildFile; fileRef = 427CB44924A0010C006F4330 /* Configuration.xib */; };
+		427CB45C24A0200D006F4330 /* MouseTerm.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42CB6C08249FF8820095D8DB /* MouseTerm.bundle */; };
 		42CB6C20249FFA570095D8DB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CB6C1F249FFA570095D8DB /* Cocoa.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		427CB45B24A01FEA006F4330 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Application Support/SIMBL/Plugins";
+			dstSubfolderSpec = 0;
+			files = (
+				427CB45C24A0200D006F4330 /* MouseTerm.bundle in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		427CB411249FFB42006F4330 /* MouseTerm-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MouseTerm-Prefix.pch"; sourceTree = SOURCE_ROOT; };
@@ -148,6 +162,7 @@
 				42CB6C04249FF8820095D8DB /* Sources */,
 				42CB6C05249FF8820095D8DB /* Frameworks */,
 				42CB6C06249FF8820095D8DB /* Resources */,
+				427CB45B24A01FEA006F4330 /* CopyFiles */,
 			);
 			buildRules = (
 			);
