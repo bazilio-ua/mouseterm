@@ -13,12 +13,11 @@ static BOOL enabled = YES;
 - (NSData*) MouseTerm_codeForEvent: (NSEvent*) event
                             button: (MouseButton) button
                             motion: (BOOL) motion
-                           release: (BOOL) release
 {
     Position pos = [self MouseTerm_currentPosition: event];
     unsigned int x = pos.x;
     unsigned int y = pos.y;
-    char cb = button;
+    char cb = button + 32;
     char modflag = [event modifierFlags];
 
     if (modflag & NSShiftKeyMask) cb |= 4;
@@ -26,41 +25,12 @@ static BOOL enabled = YES;
     if (modflag & NSControlKeyMask) cb |= 16;
     if (motion) cb += 32;
 
-    MTShell* shell = [[(TTView*) self controller] shell];
-    MouseProtocol mouseProtocol = [shell MouseTerm_getMouseProtocol];
-    unsigned int len;
-    const size_t BUFFER_LENGTH = 256;
-    char buf[BUFFER_LENGTH];
+    x = MIN(x + 33, 255);
+    y = MIN(y + 33, 255);
 
-    switch (mouseProtocol) {
-
-    case URXVT_PROTOCOL:
-        if (release)
-            cb |= MOUSE_RELEASE;
-        snprintf(buf, BUFFER_LENGTH, "\e[%d;%d;%dM", cb + 32, x, y);
-        len = strlen(buf);
-        break;
-   
-    case SGR_PROTOCOL:
-        if (release) // release
-            snprintf(buf, BUFFER_LENGTH, "\e[<%d;%d;%dm", cb, x, y);
-        else 
-            snprintf(buf, BUFFER_LENGTH, "\e[<%d;%d;%dM", cb, x, y);
-        len = strlen(buf);
-        break;
-
-    case NORMAL_PROTOCOL:
-    default:
-        if (release)
-            cb |= MOUSE_RELEASE;
-        x = MIN(x + 33, 255);
-        y = MIN(y + 33, 255);
-        len = MOUSE_RESPONSE_LEN;
-
-        snprintf(buf, len + 1, MOUSE_RESPONSE, cb + 32, x, y);
-        break;
-    }
-    return [NSData dataWithBytes: buf length: len];
+    char buf[MOUSE_RESPONSE_LEN + 1];
+    snprintf(buf, sizeof(buf), MOUSE_RESPONSE, cb, x, y);
+    return [NSData dataWithBytes: buf length: MOUSE_RESPONSE_LEN];
 }
 
 + (void) MouseTerm_setEnabled: (BOOL) value
@@ -152,8 +122,7 @@ static BOOL enabled = YES;
         [shell MouseTerm_setIsMouseDown: YES];
         NSData* data = [self MouseTerm_codeForEvent: event
                                              button: button
-                                             motion: NO
-                                            release: NO];
+                                             motion: NO];
         [(TTShell*) shell writeData: data];
 
         goto handled;
@@ -184,9 +153,8 @@ ignored:
     case ALL_MODE:
     {
         NSData* data = [self MouseTerm_codeForEvent: event
-                                             button: button
-                                             motion: YES
-                                            release: NO];
+                                             button: MOUSE_RELEASE
+                                             motion: YES];
         [(TTShell*) shell writeData: data];
         goto handled;
     }
@@ -215,9 +183,8 @@ ignored:
     {
         [shell MouseTerm_setIsMouseDown: NO];
         NSData* data = [self MouseTerm_codeForEvent: event
-                                             button: button
-                                             motion: NO
-                                            release: YES];
+                                             button: MOUSE_RELEASE
+                                             motion: NO];
         [(TTShell*) shell writeData: data];
 
         goto handled;
@@ -378,8 +345,7 @@ ignored:
 
         NSData* data = [self MouseTerm_codeForEvent: event
                                              button: button
-                                             motion: NO
-                                            release: NO];
+                                             motion: NO];
 
         long i;
         long lines = lround(delta) + 1;

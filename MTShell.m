@@ -15,8 +15,6 @@
         [MouseTerm_ivars setObject: dict forKey: ptr];
         [dict setObject: [NSNumber numberWithInt: NO_MODE]
                  forKey: @"mouseMode"];
-        [dict setObject: [NSNumber numberWithInt: NORMAL_PROTOCOL]
-                 forKey: @"mouseProtocol"];
         [dict setObject: [NSNumber numberWithBool: NO]
                  forKey: @"appCursorMode"];
         [dict setObject: [NSNumber numberWithBool: NO]
@@ -39,21 +37,6 @@
     NSValue *ptr = [self MouseTerm_initVars];
     return [(NSNumber*) [[MouseTerm_ivars objectForKey: ptr]
                             objectForKey: @"mouseMode"] intValue];
-}
-
-- (void) MouseTerm_setMouseProtocol: (int) mouseProtocol
-{
-    NSValue *ptr = [self MouseTerm_initVars];
-    [[MouseTerm_ivars objectForKey: ptr]
-        setObject: [NSNumber numberWithInt:mouseProtocol]
-           forKey: @"mouseProtocol"];
-}
-
-- (int) MouseTerm_getMouseProtocol
-{
-    NSValue *ptr = [self MouseTerm_initVars];
-    return [(NSNumber*) [[MouseTerm_ivars objectForKey: ptr]
-                            objectForKey: @"mouseProtocol"] intValue];
 }
 
 - (void) MouseTerm_setAppCursorMode: (BOOL) appCursorMode
