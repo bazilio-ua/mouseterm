@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		427CB430249FFD54006F4330 /* MTParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 427CB419249FFD54006F4330 /* MTParser.m */; };
+		427CB432249FFD54006F4330 /* MTView.m in Sources */ = {isa = PBXBuildFile; fileRef = 427CB41C249FFD54006F4330 /* MTView.m */; };
+		427CB433249FFD54006F4330 /* MTTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 427CB41E249FFD54006F4330 /* MTTabController.m */; };
+		427CB434249FFD54006F4330 /* MTShell.m in Sources */ = {isa = PBXBuildFile; fileRef = 427CB420249FFD54006F4330 /* MTShell.m */; };
+		427CB435249FFD54006F4330 /* MTProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 427CB422249FFD54006F4330 /* MTProfile.m */; };
+		427CB436249FFD54006F4330 /* MTParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 427CB424249FFD54006F4330 /* MTParserState.m */; };
+		427CB438249FFD54006F4330 /* MTAppPrefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 427CB428249FFD54006F4330 /* MTAppPrefsController.m */; };
+		427CB439249FFD54006F4330 /* MouseTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = 427CB42A249FFD54006F4330 /* MouseTerm.m */; };
+		427CB43B249FFD54006F4330 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 427CB42E249FFD54006F4330 /* JRSwizzle.m */; };
+		427CB44B24A0010C006F4330 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 427CB44724A0010C006F4330 /* Localizable.strings */; };
+		427CB44C24A0010C006F4330 /* Configuration.xib in Resources */ = {isa = PBXBuildFile; fileRef = 427CB44924A0010C006F4330 /* Configuration.xib */; };
+		42CB6C20249FFA570095D8DB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CB6C1F249FFA570095D8DB /* Cocoa.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		427CB411249FFB42006F4330 /* MouseTerm-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MouseTerm-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		427CB417249FFBCF006F4330 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		427CB419249FFD54006F4330 /* MTParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTParser.m; sourceTree = SOURCE_ROOT; };
+		427CB41A249FFD54006F4330 /* Terminal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Terminal.h; sourceTree = SOURCE_ROOT; };
+		427CB41C249FFD54006F4330 /* MTView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTView.m; sourceTree = SOURCE_ROOT; };
+		427CB41D249FFD54006F4330 /* MTView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTView.h; sourceTree = SOURCE_ROOT; };
+		427CB41E249FFD54006F4330 /* MTTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTabController.m; sourceTree = SOURCE_ROOT; };
+		427CB41F249FFD54006F4330 /* MTTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTabController.h; sourceTree = SOURCE_ROOT; };
+		427CB420249FFD54006F4330 /* MTShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTShell.m; sourceTree = SOURCE_ROOT; };
+		427CB421249FFD54006F4330 /* MTShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTShell.h; sourceTree = SOURCE_ROOT; };
+		427CB422249FFD54006F4330 /* MTProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTProfile.m; sourceTree = SOURCE_ROOT; };
+		427CB423249FFD54006F4330 /* MTProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTProfile.h; sourceTree = SOURCE_ROOT; };
+		427CB424249FFD54006F4330 /* MTParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTParserState.m; sourceTree = SOURCE_ROOT; };
+		427CB425249FFD54006F4330 /* MTParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTParserState.h; sourceTree = SOURCE_ROOT; };
+		427CB426249FFD54006F4330 /* MTParser.rl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MTParser.rl; sourceTree = SOURCE_ROOT; };
+		427CB427249FFD54006F4330 /* MTParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTParser.h; sourceTree = SOURCE_ROOT; };
+		427CB428249FFD54006F4330 /* MTAppPrefsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAppPrefsController.m; sourceTree = SOURCE_ROOT; };
+		427CB429249FFD54006F4330 /* MTAppPrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAppPrefsController.h; sourceTree = SOURCE_ROOT; };
+		427CB42A249FFD54006F4330 /* MouseTerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MouseTerm.m; sourceTree = SOURCE_ROOT; };
+		427CB42B249FFD54006F4330 /* MouseTerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MouseTerm.h; sourceTree = SOURCE_ROOT; };
+		427CB42C249FFD54006F4330 /* Mouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mouse.h; sourceTree = SOURCE_ROOT; };
+		427CB42E249FFD54006F4330 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = SOURCE_ROOT; };
+		427CB42F249FFD54006F4330 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = SOURCE_ROOT; };
+		427CB44824A0010C006F4330 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
+		427CB44A24A0010C006F4330 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Configuration.xib; sourceTree = SOURCE_ROOT; };
+		42CB6C08249FF8820095D8DB /* MouseTerm.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MouseTerm.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		42CB6C1F249FFA570095D8DB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42CB6C05249FF8820095D8DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42CB6C20249FFA570095D8DB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		427CB43C249FFFEF006F4330 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				427CB411249FFB42006F4330 /* MouseTerm-Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		42CB6BFD249FF8820095D8DB = {
+			isa = PBXGroup;
+			children = (
+				42CB6C1C249FF99F0095D8DB /* Sources */,
+				427CB43C249FFFEF006F4330 /* Other Sources */,
+				42CB6C1E249FF9C50095D8DB /* Resources */,
+				42CB6C0A249FF8820095D8DB /* Frameworks */,
+				42CB6C09249FF8820095D8DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42CB6C09249FF8820095D8DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42CB6C08249FF8820095D8DB /* MouseTerm.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42CB6C0A249FF8820095D8DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42CB6C1F249FFA570095D8DB /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42CB6C1C249FF99F0095D8DB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				427CB41A249FFD54006F4330 /* Terminal.h */,
+				427CB41C249FFD54006F4330 /* MTView.m */,
+				427CB41D249FFD54006F4330 /* MTView.h */,
+				427CB41E249FFD54006F4330 /* MTTabController.m */,
+				427CB41F249FFD54006F4330 /* MTTabController.h */,
+				427CB420249FFD54006F4330 /* MTShell.m */,
+				427CB421249FFD54006F4330 /* MTShell.h */,
+				427CB422249FFD54006F4330 /* MTProfile.m */,
+				427CB423249FFD54006F4330 /* MTProfile.h */,
+				427CB424249FFD54006F4330 /* MTParserState.m */,
+				427CB425249FFD54006F4330 /* MTParserState.h */,
+				427CB426249FFD54006F4330 /* MTParser.rl */,
+				427CB419249FFD54006F4330 /* MTParser.m */,
+				427CB427249FFD54006F4330 /* MTParser.h */,
+				427CB428249FFD54006F4330 /* MTAppPrefsController.m */,
+				427CB429249FFD54006F4330 /* MTAppPrefsController.h */,
+				427CB42A249FFD54006F4330 /* MouseTerm.m */,
+				427CB42B249FFD54006F4330 /* MouseTerm.h */,
+				427CB42C249FFD54006F4330 /* Mouse.h */,
+				427CB42E249FFD54006F4330 /* JRSwizzle.m */,
+				427CB42F249FFD54006F4330 /* JRSwizzle.h */,
+			);
+			name = Sources;
+			path = MouseTerm;
+			sourceTree = "<group>";
+		};
+		42CB6C1E249FF9C50095D8DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				427CB417249FFBCF006F4330 /* Info.plist */,
+				427CB44924A0010C006F4330 /* Configuration.xib */,
+				427CB44724A0010C006F4330 /* Localizable.strings */,
+			);
+			name = Resources;
+			path = MouseTerm;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42CB6C07249FF8820095D8DB /* MouseTerm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42CB6C16249FF8820095D8DB /* Build configuration list for PBXNativeTarget "MouseTerm" */;
+			buildPhases = (
+				42CB6C04249FF8820095D8DB /* Sources */,
+				42CB6C05249FF8820095D8DB /* Frameworks */,
+				42CB6C06249FF8820095D8DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MouseTerm;
+			productName = MouseTerm;
+			productReference = 42CB6C08249FF8820095D8DB /* MouseTerm.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42CB6BFF249FF8820095D8DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 42CB6C02249FF8820095D8DB /* Build configuration list for PBXProject "MouseTerm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				English,
+			);
+			mainGroup = 42CB6BFD249FF8820095D8DB;
+			productRefGroup = 42CB6C09249FF8820095D8DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42CB6C07249FF8820095D8DB /* MouseTerm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42CB6C06249FF8820095D8DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427CB44B24A0010C006F4330 /* Localizable.strings in Resources */,
+				427CB44C24A0010C006F4330 /* Configuration.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42CB6C04249FF8820095D8DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427CB430249FFD54006F4330 /* MTParser.m in Sources */,
+				427CB432249FFD54006F4330 /* MTView.m in Sources */,
+				427CB433249FFD54006F4330 /* MTTabController.m in Sources */,
+				427CB434249FFD54006F4330 /* MTShell.m in Sources */,
+				427CB435249FFD54006F4330 /* MTProfile.m in Sources */,
+				427CB436249FFD54006F4330 /* MTParserState.m in Sources */,
+				427CB438249FFD54006F4330 /* MTAppPrefsController.m in Sources */,
+				427CB439249FFD54006F4330 /* MouseTerm.m in Sources */,
+				427CB43B249FFD54006F4330 /* JRSwizzle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		427CB44724A0010C006F4330 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				427CB44824A0010C006F4330 /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		427CB44924A0010C006F4330 /* Configuration.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				427CB44A24A0010C006F4330 /* English */,
+			);
+			name = Configuration.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42CB6C14249FF8820095D8DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		42CB6C15249FF8820095D8DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		42CB6C17249FF8820095D8DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MouseTerm-Prefix.pch";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		42CB6C18249FF8820095D8DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MouseTerm-Prefix.pch";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42CB6C02249FF8820095D8DB /* Build configuration list for PBXProject "MouseTerm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42CB6C14249FF8820095D8DB /* Debug */,
+				42CB6C15249FF8820095D8DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42CB6C16249FF8820095D8DB /* Build configuration list for PBXNativeTarget "MouseTerm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42CB6C17249FF8820095D8DB /* Debug */,
+				42CB6C18249FF8820095D8DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42CB6BFF249FF8820095D8DB /* Project object */;
+}
